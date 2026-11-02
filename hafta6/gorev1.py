@@ -8,4 +8,3 @@ if yas >= 12:
     print("Oyuna giriş yapabilirsin!")
 else:
     print("Yaşın yeterli değil.")
-    .
