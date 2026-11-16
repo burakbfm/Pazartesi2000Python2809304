@@ -51,7 +51,7 @@ kahramanlar = {
 
 def guc_hesapla(saldiri, savunma, bonus=0):
     # Güç hesaplama işlemini tamamla
-    pass
+    
 
 print("=== SÜPER KAHRAMAN ARENASI ===")
 
