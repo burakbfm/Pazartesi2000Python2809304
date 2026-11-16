@@ -51,12 +51,37 @@ kahramanlar = {
 
 def guc_hesapla(saldiri, savunma, bonus=0):
     # Güç hesaplama işlemini tamamla
+    toplam = saldiri * 2 + savunma + bonus
+    return toplam
     
 
 print("=== SÜPER KAHRAMAN ARENASI ===")
 
 # Görev 1: Kahramanları listele.
+print("Kahramanlar:")
+for isim in kahramanlar:
+    print("-", isim)
 # Görev 2: Kullanıcıdan seçim al.
-# Görev 3: Kahramanın özelliklerini bul.
-# Görev 4: Bonus puan iste.
-# Görev 5: Toplam gücü hesapla.
+secim = input("Kahraman seç: ")
+if secim in kahramanlar:
+    kahraman = kahramanlar[secim]
+    # Görev 4: Bonus puan iste.
+    bonus = int(input("Bonus puan (0*10): "))
+    if bonus < 0 or bonus > 10:
+        print("Geçersiz Bonus! Bonus:0 yapıldı.")
+        bonus = 0
+    
+    # Görev 5: Toplam gücü hesapla.
+    toplam_guc = guc_hesapla(kahraman["saldiri"],kahraman["savunma"],bonus)
+    # Görev 3: Kahramanın özelliklerini bul.
+    print("KAHRAMAN BİLGİLERİ")
+    print("Kahraman:", secim)
+    print("Saldırı:",kahraman["saldiri"])
+    print("Savunma:",kahraman["savunma"])
+    print("Bonus:",bonus)
+
+    print("Toplam Güç:",toplam_guc)
+else:
+    print("Böyle bir kahraman bulunamadı")
+
+
