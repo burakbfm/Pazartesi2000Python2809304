@@ -4,3 +4,5 @@
 # BEKLENEN ÇIKTI:
 # Hoş geldin Burak
 # Maceraya hazır mısın?
+
+# Fonksiyona ikinci bir seviye parametresi ekle ve oyuncunun seviyesini de göster
