@@ -6,4 +6,4 @@ def puanlama(puan, carpan):
     return toplam # return çağırıldığı yere bilgiyi yollar. çağırıldığı yere toplamı yollicak
 
 sonuc = 10 * puanlama(10,5) # 50
-print(sonuc)
+print("TAM SONUÇ:", sonuc)
